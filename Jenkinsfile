@@ -76,7 +76,7 @@ pipeline {
                                     try
                                     {
                                         bat " copy target\\site\\serenity\\results.csv historics\\results_${timestamp}.csv"
-                                        bat (call "historics\\historicReport.bat")
+                                        bat "start historics\\historicReport.bat)"
                                         bat  " rename \"${WORKSPACE}\\target\" serenity_${timestamp}"
                                         echo 'Backup de evidencias realizado con exito'
 
