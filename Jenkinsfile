@@ -102,7 +102,7 @@ pipeline {
                     }
         }
 
-        stage('Notificar') {
+        /*stage('Notificar') {
             steps {
                 script {
                     if (currentBuild.result == 'UNSTABLE')
@@ -124,6 +124,6 @@ pipeline {
                         )
                 }
             }
-        }
+        */}
     }
 }
